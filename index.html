@@ -1,125 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PCAF ICT Helpdesk</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PCAF ICT Helpdesk</title>
 
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f6f8;
-      color: #333;
-      line-height: 1.6;
-    }
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    /* Banner with optional image */
-    .banner {
-      background-color: #004a99;
-      color: white;
-      text-align: center;
-      padding: 15px 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
 
-    .banner img {
-      height: 60px; /* Adjust as needed */
-    }
+/* ===== Banner ===== */
+.banner {
+  width: 100%;
+  max-height: 120px;     /* banner height */
+  overflow: hidden;
+  background-color: #004a99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .banner-text {
-      font-size: 1.5rem;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
+/* Banner image */
+.banner img {
+  width: 100%;
+  height: 100%;
+  max-height: 120px;
+  object-fit: contain;  /* use "cover" if you want it cropped instead */
+  display: block;
+}
 
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      background: white;
-      padding: 30px 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
+/* ===== Main Container ===== */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
-    h1 {
-      color: #004a99;
-      text-align: center;
-      margin-bottom: 15px;
-      font-size: 2rem;
-    }
+h1 {
+  color: #004a99;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
 
-    p {
-      text-align: center;
-      margin-bottom: 25px;
-      font-size: 1.1rem;
-      color: #555;
-    }
+p {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  color: #555;
+}
 
-    .form-frame {
-      width: 100%;
-      min-height: 800px;
-      border: none;
-      border-radius: 8px;
-    }
+/* Google Form */
+.form-frame {
+  width: 100%;
+  min-height: 800px;
+  border: none;
+  border-radius: 8px;
+}
 
-    /* Footer */
-    .footer {
-      text-align: center;
-      margin-top: 30px;
-      color: #777;
-      font-size: 0.9rem;
-    }
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #777;
+  font-size: 0.9rem;
+}
 
-    .footer img {
-      display: block;
-      margin: 10px auto 5px auto;
-      height: 400px; /* adjust logo size */
-    }
+.footer img {
+  display: block;
+  margin: 10px auto 5px auto;
+  max-width: 100%;
+  height: auto;
+}
 
-    @media (max-width: 600px) {
-      .banner {
-        flex-direction: column;
-      }
-      .banner-text {
-        font-size: 1.2rem;
-      }
-      h1 {
-        font-size: 1.5rem;
-      }
-      p {
-        font-size: 1rem;
-      }
-      .footer img {
-        height: 400px;
-      }
-    }
-  </style>
+/* Mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+</style>
 </head>
+
 <body>
 
-  <!-- Banner with logo -->
-  <div class="banner">
-    <!-- Replace the src below with your banner/logo image URL -->
-    <img src="images/banner.png" alt="PCAF Logo">
-    <div class="banner-text">PCAF ICT Helpdesk</div>
+<!-- ===== Banner ===== -->
+<div class="banner">
+  <img src="images/banner.png" alt="PCAF Banner">
+</div>
+
+<!-- ===== Content ===== -->
+<div class="container">
+  <h1>PCAF ICT Helpdesk</h1>
+  <p>Please submit your ICT request using the form below.</p>
+
+  <iframe class="form-frame"
+    src="https://docs.google.com/forms/d/e/1FAIpQLSck9hafuKLYH2hTWoUhM0MOa3J3R9SSheKZcYz5eU3s4SEqmg/viewform?embedded=true">
+  </iframe>
+
+  <!-- ===== Footer ===== -->
+  <div class="footer">
+    <img src="images/footer.png" alt="PCAF Footer Logo">
+    &copy; 2026 PCAF ICT Helpdesk. For inquiries, contact local 2608 / 2624.
   </div>
+</div>
 
-  <div class="container">
-    <h1>PCAF ICT Helpdesk</h1>
-    <p>Please submit your ICT request using the form below.</p>
-
-    <iframe class="form-frame"
-      src="https://docs.google.com/forms/d/e/1FAIpQLSck9hafuKLYH2hTWoUhM0MOa3J3R9SSheKZcYz5eU3s4SEqmg/viewform?embedded=true"
-      allowfullscreen>
-    </iframe>
-
-    <!-- Footer with logo -->
-    <div class="footer">
-      <img src="images/footer.png" alt="PCAF Footer Logo">
-      &copy; 2026 PCAF ICT Helpdesk. For inquiries, contact local 2608 / 2624.
+</body>
+</html>
